@@ -9,7 +9,12 @@
 # Pull base image.
 FROM debian:jessie
 MAINTAINER Alexander Turcic "alex@zeitgeist.se"
-
+ENV DEBIAN_FRONTEND=noninteractive
+ENV LC_ALL=C.UTF-8
+ENV LANG=en_US.UTF-8
+ENV LANGUAGE=en_US.UTF-8
+ENV TZ=Asia/Shanghai
+ENV SCREEN_RESOLUTION=1280x900 \
 ENV DOWNLOAD_URL http://midori-browser.org/downloads/midori_0.5.11-0_amd64_.deb
 
 RUN \
