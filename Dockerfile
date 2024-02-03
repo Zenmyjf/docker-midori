@@ -7,7 +7,7 @@
 # SOURCE:         https://github.com/alexzeitgeist/docker-midori
 
 # Pull base image.
-FROM debian:jessie
+FROM debian:bookworm
 MAINTAINER Alexander Turcic "alex@zeitgeist.se"
 
 ENV DOWNLOAD_URL http://midori-browser.org/downloads/midori_0.5.11-0_amd64_.deb
